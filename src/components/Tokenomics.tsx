@@ -1,4 +1,6 @@
 import Image from "next/image";
+import AgentKImg from "@/assets/Agent_K.png";
+import AgentJImg from "@/assets/Agent_J.png";
 
 export default function Tokenomics() {
   return (
@@ -49,7 +51,7 @@ export default function Tokenomics() {
               <div className="flex gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-lg overflow-hidden border border-mib-border relative">
                   <Image
-                    src="/agent-k.png"
+                    src={AgentKImg}
                     alt="Agent K"
                     fill
                     className="object-cover"
@@ -68,7 +70,7 @@ export default function Tokenomics() {
               <div className="flex gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-lg overflow-hidden border border-mib-border relative">
                   <Image
-                    src="/agent-j.png"
+                    src={AgentJImg}
                     alt="Agent J"
                     fill
                     className="object-cover"

@@ -1,14 +1,28 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
+import AgentsImg from "@/assets/Agents.png";
+
+const CONTRACT_ADDRESS = "TBA";
 
 export default function Hero() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(CONTRACT_ADDRESS);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-20">
       <div className="relative z-10 text-center max-w-4xl">
-        {/* Hero image placeholder */}
+        {/* Hero image */}
         <div className="animate-fade-in-up mb-10">
           <div className="relative w-48 h-48 md:w-64 md:h-64 mx-auto">
             <Image
-              src="/hero-image.png"
+              src={AgentsImg}
               alt="Agents In Black"
               fill
               className="object-contain"
@@ -30,6 +44,30 @@ export default function Hero() {
           Agents In{" "}
           <span className="text-gray-300">Black</span>
         </h1>
+
+        {/* CA field */}
+        <div className="animate-fade-in-up-delay flex items-center justify-center gap-3 mb-8">
+          <div className="flex items-center bg-white/5 border border-white/10 rounded-full px-5 py-2.5 font-mono text-sm">
+            <span className="text-gray-500 mr-2">CA:</span>
+            <span className="text-white">{CONTRACT_ADDRESS}</span>
+            <button
+              onClick={handleCopy}
+              className="ml-3 text-gray-400 hover:text-white transition-colors"
+              title="Copy contract address"
+            >
+              {copied ? (
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+              ) : (
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" />
+                  <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z" />
+                </svg>
+              )}
+            </button>
+          </div>
+        </div>
 
         {/* Subtitle */}
         <p className="animate-fade-in-up-delay text-xl md:text-2xl text-gray-400 mb-4 max-w-2xl mx-auto">

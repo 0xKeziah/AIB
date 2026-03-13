@@ -1,4 +1,6 @@
 import Image from "next/image";
+import AgentKImg from "@/assets/Agent_K.png";
+import AgentJImg from "@/assets/Agent_J.png";
 
 const agents = [
   {
@@ -9,7 +11,7 @@ const agents = [
       "The veteran. Methodical, precise, relentless. Agent K has been protecting portfolios since day one. He doesn't flinch. He doesn't hesitate. He just buys back.",
     traits: ["Steady accumulation", "High-frequency buybacks", "Never sleeps"],
     status: "ACTIVE",
-    image: "/agent-k.png",
+    image: AgentKImg,
   },
   {
     name: "Agent J",
@@ -19,7 +21,7 @@ const agents = [
       "The rookie with the firepower. Agent J brings energy and aggression to every buyback operation. Fast, loud, effective.",
     traits: ["Aggressive strategy", "Market-responsive", "Maximum impact"],
     status: "ACTIVE",
-    image: "/agent-j.png",
+    image: AgentJImg,
   },
 ];
 
