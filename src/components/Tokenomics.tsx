@@ -1,9 +1,11 @@
+import Image from "next/image";
+
 export default function Tokenomics() {
   return (
     <section id="tokenomics" className="py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-mib-green font-mono text-sm mb-3 tracking-widest uppercase">
+          <p className="text-gray-400 font-mono text-sm mb-3 tracking-widest uppercase">
             // Tokenomics
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -45,35 +47,45 @@ export default function Tokenomics() {
             </h3>
             <div className="space-y-6">
               <div className="flex gap-4">
-                <div className="w-10 h-10 shrink-0 rounded-lg bg-mib-green/10 border border-mib-green/30 flex items-center justify-center">
-                  <span className="text-mib-green font-mono font-bold">K</span>
+                <div className="w-10 h-10 shrink-0 rounded-lg overflow-hidden border border-mib-border relative">
+                  <Image
+                    src="/agent-k.png"
+                    alt="Agent K"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div>
                   <p className="text-white font-semibold mb-1">
                     Agent K — Steady Accumulator
                   </p>
-                  <p className="text-gray-400 text-sm">
+                  <p className="text-gray-500 text-sm">
                     Consistent, methodical buybacks. Builds the floor one
                     transaction at a time.
                   </p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="w-10 h-10 shrink-0 rounded-lg bg-mib-green/10 border border-mib-green/30 flex items-center justify-center">
-                  <span className="text-mib-green font-mono font-bold">J</span>
+                <div className="w-10 h-10 shrink-0 rounded-lg overflow-hidden border border-mib-border relative">
+                  <Image
+                    src="/agent-j.png"
+                    alt="Agent J"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div>
                   <p className="text-white font-semibold mb-1">
                     Agent J — Tactical Striker
                   </p>
-                  <p className="text-gray-400 text-sm">
+                  <p className="text-gray-500 text-sm">
                     Aggressive, market-responsive buybacks. Maximizes impact when
                     it counts.
                   </p>
                 </div>
               </div>
-              <div className="mt-4 p-4 bg-mib-green/5 border border-mib-green/20 rounded-xl">
-                <p className="text-mib-green text-sm font-mono">
+              <div className="mt-4 p-4 bg-white/5 border border-white/10 rounded-xl">
+                <p className="text-gray-300 text-sm font-mono">
                   100% of agent revenue → $AIB buybacks
                 </p>
               </div>

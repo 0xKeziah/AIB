@@ -4,8 +4,8 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-full bg-mib-green/20 border border-mib-green flex items-center justify-center">
-              <span className="text-mib-green font-bold text-sm">A</span>
+            <div className="w-8 h-8 rounded-full bg-white/10 border border-white/30 flex items-center justify-center">
+              <span className="text-white font-bold text-sm">A</span>
             </div>
             <span className="font-mono font-bold text-white">
               Agents In Black
@@ -22,19 +22,19 @@ export default function Footer() {
               href="https://x.com/i/communities/2032574402244784215"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-mib-green transition-colors"
+              className="hover:text-white transition-colors"
             >
               Twitter
             </a>
             <a
               href="#"
-              className="hover:text-mib-green transition-colors"
+              className="hover:text-white transition-colors"
             >
               Telegram
             </a>
             <a
               href="#"
-              className="hover:text-mib-green transition-colors"
+              className="hover:text-white transition-colors"
             >
               pump.fun
             </a>
