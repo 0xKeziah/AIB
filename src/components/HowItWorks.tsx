@@ -3,7 +3,7 @@ const steps = [
     number: "01",
     title: "Revenue flows in",
     description:
-      "Users pay for agent services using USDC or SOL. Every payment is verified on-chain via pump.fun's invoice system.",
+      "Users pay for agent services using SOL. Every payment is verified on-chain via pump.fun's invoice system.",
     icon: "\u2192",
   },
   {
@@ -66,7 +66,7 @@ export default function HowItWorks() {
           <p className="text-gray-600 mb-4">// buyback_flow.sol</p>
           <div className="space-y-2 text-gray-500">
             <p>
-              <span className="text-white">user</span>.pay(amount, currency)
+              <span className="text-white">user</span>.pay(amount, SOL)
               <span className="text-gray-600"> → </span>
               <span className="text-gray-300">invoice verified on-chain</span>
             </p>
