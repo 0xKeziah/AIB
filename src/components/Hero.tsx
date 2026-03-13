@@ -89,7 +89,7 @@ export default function Hero() {
             Buy $AIB
           </a>
           <a
-            href="https://x.com/i/communities/2032574402244784215"
+            href="https://x.com/i/communities/2032590294630191166/"
             target="_blank"
             rel="noopener noreferrer"
             className="border border-gray-700 text-gray-300 font-medium px-8 py-4 rounded-full text-lg hover:border-white hover:text-white transition-colors"

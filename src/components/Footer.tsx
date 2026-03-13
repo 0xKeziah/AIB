@@ -19,7 +19,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-6 text-sm text-gray-500">
             <a
-              href="https://x.com/i/communities/2032574402244784215"
+              href="https://x.com/i/communities/2032590294630191166/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"
