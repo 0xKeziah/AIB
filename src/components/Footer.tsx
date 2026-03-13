@@ -30,12 +30,6 @@ export default function Footer() {
               href="#"
               className="hover:text-white transition-colors"
             >
-              Telegram
-            </a>
-            <a
-              href="#"
-              className="hover:text-white transition-colors"
-            >
               pump.fun
             </a>
           </div>

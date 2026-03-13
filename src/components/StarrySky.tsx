@@ -40,10 +40,10 @@ export default function StarrySky() {
 
     function draw() {
       ctx!.clearRect(0, 0, canvas!.width, canvas!.height);
-      time += 0.01;
+      time += 0.05;
 
       for (const star of stars) {
-        const twinkle = Math.sin(time * star.speed * 100 + star.phase) * 0.3 + 0.7;
+        const twinkle = Math.sin(time * star.speed * 200 + star.phase) * 0.4 + 0.6;
         const alpha = star.opacity * twinkle;
 
         ctx!.beginPath();
