@@ -28,9 +28,7 @@ export default function Navbar() {
         </div>
 
         <a
-          href="https://pump.fun/coin/GExmg93Xqweq8o7N4jmC3DqwHppfdKtkWJJLMLYxpump"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#"
           className="bg-white text-black font-bold text-sm px-5 py-2 rounded-full hover:bg-gray-200 transition-colors"
         >
           Buy $AIB

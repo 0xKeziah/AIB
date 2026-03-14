@@ -19,17 +19,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-6 text-sm text-gray-500">
             <a
-              href="https://x.com/i/communities/2032834652063379582/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white transition-colors"
-            >
-              Twitter
-            </a>
-            <a
-              href="https://pump.fun/coin/GExmg93Xqweq8o7N4jmC3DqwHppfdKtkWJJLMLYxpump"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#"
               className="hover:text-white transition-colors"
             >
               pump.fun

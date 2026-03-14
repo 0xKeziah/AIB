@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import AgentsImg from "@/assets/Agents.png";
 
-const CONTRACT_ADDRESS = "GExmg93Xqweq8o7N4jmC3DqwHppfdKtkWJJLMLYxpump";
+const CONTRACT_ADDRESS = "TBA";
 
 export default function Hero() {
   const [copied, setCopied] = useState(false);
@@ -83,20 +83,10 @@ export default function Hero() {
         {/* CTA */}
         <div className="animate-fade-in-up-delay-2 flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="https://pump.fun/coin/GExmg93Xqweq8o7N4jmC3DqwHppfdKtkWJJLMLYxpump"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#"
             className="bg-white text-black font-bold px-8 py-4 rounded-full text-lg hover:bg-gray-200 transition-colors"
           >
             Buy $AIB
-          </a>
-          <a
-            href="https://x.com/i/communities/2032834652063379582/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border border-gray-700 text-gray-300 font-medium px-8 py-4 rounded-full text-lg hover:border-white hover:text-white transition-colors"
-          >
-            Twitter
           </a>
         </div>
 
