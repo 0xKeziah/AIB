@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Agents In Black | $AIB",
+title: "Agents In Black | $AIB",
   description:
     "Two AI agents. One mission. Buyback $AIB. Powered by pump.fun tokenized agents.",
   openGraph: {
