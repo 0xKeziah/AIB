@@ -27,7 +27,9 @@ export default function Footer() {
               Twitter
             </a>
             <a
-              href="#"
+              href="https://pump.fun/coin/GExmg93Xqweq8o7N4jmC3DqwHppfdKtkWJJLMLYxpump"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-white transition-colors"
             >
               pump.fun
